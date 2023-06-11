@@ -1,0 +1,38 @@
+use_real_models: true
+use_real_localization: true
+
+# radius in metres to consider robot as having reached a waypoint/goal. 
+# this should be set slightly lower than the server's `local_thres` param.
+REACHED_THRESHOLD_M : 0.2 
+
+# angle in degrees between robot's forward vector and heading of waypoint.
+ANGLE_THRESHOLD_DEG : 20.0
+
+# robot radius, used in path planning.
+ROBOT_RADIUS_M : 0.4
+
+
+NLP_MODEL_DIR : '/home/novice-hctp/Downloads/Model4_Submission/Model4/model4.pt'
+
+CV_MODEL_DIR : '/home/novice-hctp/Documents/CV_HCTP/yolov8.pt'
+
+REID_MODEL_DIR : '/home/novice-hctp/Documents/CV_HCTP/reid.pt'
+
+SPEAKER_ID_MODEL_DIR : '/mnt/d/code/til-23-finals/stubs/speakerid_utils/demo_models_advance_cleaned'
+
+# directory path to save robot's photos to. if relative path doesn't work, try abs path.
+PHOTO_DIR : "/home/novice-hctp/Documents/data/imgs"
+
+# Directory in which to unzip zipped folders received from scoring server.
+# Use absolute path.
+ZIP_SAVE_DIR: "/home/novice-hctp/Documents/temp"
+
+# Number of nav iterations to consider robot as "stuck" on one waypoint.
+STUCK_THRESHOLD : 30
+
+MY_TEAM_NAME: "Team-Test-Test"
+
+# Images to re-id                                            
+SUSPECT_IMG : "/home/novice-hctp/Documents/data/participant/arena-session1/1A_suspect.png"
+HOSTAGE_IMG : "/home/novice-hctp/Documents/data/participant/arena-session1/1A_hostage.png"
+
