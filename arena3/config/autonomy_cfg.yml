@@ -1,0 +1,44 @@
+# Set to false to use the provided mock models.
+# Set to true to use your own models, but the organizing team does NOT 
+# provide real model implementations - you have to integrate them in.
+use_real_models: true
+
+# Use real localization server (physical localization server and real robot) 
+# or simulated localization server (til-simulator and mock robomaster)
+use_real_localization: true  
+
+# radius in metres to consider robot as having reached a waypoint/goal. 
+# this should be set slightly lower than the server's `local_thres` param.
+REACHED_THRESHOLD_M : 0.1
+
+STUCK_THRESHOLD: 30
+
+# angle in degrees between robot's forward vector and heading of waypoint to
+# consider it as having reached the desired angle/heading.
+ANGLE_THRESHOLD_DEG : 10.0
+
+# robot radius, used in path planning.
+ROBOT_RADIUS_M : 0.17
+
+# Directory path to save robot's photos to. if relative path doesn't work, try abs path.
+PHOTO_DIR : "/home/novice-hctp/til-23-finals-public/data/imgs"
+
+# Directory in which to unzip zipped folders received from scoring server.
+# Use absolute path.
+ZIP_SAVE_DIR: "/home/novice-hctp/til-23-finals-public/temp"
+
+MY_TEAM_NAME: "HCTP"
+
+# Images of plushies to Re-ID                                            
+SUSPECT_IMG : "/home/novice-hctp/participants/arena-session3/1B_suspect.png"
+HOSTAGE_IMG : "/home/novice-hctp/participants/arena-session3/1B_hostage.png"
+
+# These model paths/directories are not actually being used by the sample code provided.
+# But you are recommened to use such config params to connect your code to ur models. 
+NLP_MODEL_DIR : '/home/novice-hctp/til-23-finals-public/asr.pt'
+
+CV_MODEL_DIR : '/home/novice-hctp/til-23-finals-public/yolo.pt'
+
+REID_MODEL_DIR : '/home/novice-hctp/til-23-finals-public/reid.pt'
+
+SPEAKER_ID_MODEL_DIR : ''
