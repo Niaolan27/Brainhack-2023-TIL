@@ -163,7 +163,7 @@ def main():
     planner = Planner(map_, sdf_weight=0.5)
 
     # === Initialize movement controller === 
-    controller = PIDController(Kp=(2, 1), Ki=(0, 0), Kd=(0.0, 0.0))  # this can be tuned.
+    controller = PIDController(Kp=(0.5, 0.20), Ki=(0.2, 0.1), Kd=(0.0, 0.0))  # this can be tuned.
     
     # === Initialize pose filter to smooth out noisy pose data === 
     pose_filter = SimpleMovingAverage(n=3)  # Smoothens out noisy localization data.
