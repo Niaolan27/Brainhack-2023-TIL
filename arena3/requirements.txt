@@ -134,3 +134,7 @@ jiwer==3.0.1
 torch==1.12.1+cu116 
 torchvision==0.13.1+cu116 
 torchaudio==0.12.1
+hmmlearn==0.3.0
+ffmpeg-python==0.2.0
+s3prl==0.4.10
+sox==1.4.1
