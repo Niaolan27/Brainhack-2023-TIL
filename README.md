@@ -9,4 +9,4 @@ a Siamese Network. The Siamese Network used Triplet Loss and Cosine Similarity a
 ## Speech Recognition
 
 ## Robot Planning
-The code for robot planning can be found under any of the arena folders. 
+The code for robot planning can be found under any of the arena folders. The stubs folder contains all the code necessary to run the robot. As an overview, the robot uses A* Search to plan its route, with the planning done using the planner.py file. To perform the AI tasks, it calls on the different services (ReID, Speech Recognition, Speaker Identification). 
